@@ -40,6 +40,27 @@ gatito.speak();
 //console.log('Aga gatito',gatito.age);
 //console.log('Proto Gatito',gatito.__proto__);
 
+//Tenemos entonces tres formas de construir un objeto
+/**
+ * var ob={}
+ * var ob2=Object.create(Animal.prototype)
+ * var ob3 = new Animal();
+ */
+
+ // ahora de que forma podemos agregar valores a un objeto 
+ 
+ var obj = {};
+ obj.param ='Test Valor';
+ console.log(obj.param);
+
+ var obj2 = {};
+ obj2['value']='Test Valor';
+ console.log(obj2['value']);//Ventaja podemos usar variables
+
+ var test2='Valor 1';
+ obj2[test2]='Valor acd';
+ console.log(obj2[test2]);
+
 
 
 
