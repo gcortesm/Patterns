@@ -40,6 +40,30 @@ gatito.speak();
 //console.log('Aga gatito',gatito.age);
 //console.log('Proto Gatito',gatito.__proto__);
 
+
+//with xtends 
+
+class Animal{
+    constructor(voice){
+        this.voice=voice;
+    }
+
+    speak(){
+        console.log(this.voice);
+    }
+}
+
+class Dog extends Animal{
+    constructor(voice, name ){
+        super(voice);
+        this.voice=voice;
+        this.name=name;
+    }
+
+    
+}
+
+
 //Tenemos entonces tres formas de construir un objeto
 /**
  * var ob={}
@@ -60,9 +84,6 @@ gatito.speak();
  var test2='Valor 1';
  obj2[test2]='Valor acd';
  console.log(obj2[test2]);
-
-
-
 
 
 
